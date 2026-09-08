@@ -81,5 +81,35 @@ node port.js
 2. Run against a specific IP in your local network:
 
 ```bash
-node port.js 192.168.1.1
+node port.js 192.168.x.x
 ```
+
+
+
+---
+
+## 📄 JSON Report Output Example
+
+When a scan finishes, a structured `data.json` file is automatically generated in the root directory:
+
+```json
+{
+  "targetHost": "127.0.0.1",
+  "scanDate": "2026-09-09T01:50:00.000Z",
+  "totalPortsScanned": 13,
+  "results": [
+    {
+      "Port": 80,
+      "Protocol": "TCP",
+      "Status": "OPEN",
+      "Banner": "HTTP/1.1 200 OK"
+    },
+    {
+      "Port": 53,
+      "Protocol": "UDP",
+      "Status": "OPEN|FILTERED (No Response)",
+      "Banner": "-"
+    }
+  ]
+}
+
