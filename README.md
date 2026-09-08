@@ -59,8 +59,12 @@ The scanner executes low-level network calls using an event-driven non-blocking 
                      └────────────┬────────────┘
 
 
+ 
+```
+
+
 Installation
-Clone the repository to your local directory: 
+Clone the repository to your local directory:
 
  ```bash
 git clone https://github.com/ahmetSaki/port-scanner.git
